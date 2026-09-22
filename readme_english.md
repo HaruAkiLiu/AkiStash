@@ -68,14 +68,6 @@ Send the `.exe` to others, and they can double-click to install it.
 - **Version**: Update `version` in both `src-tauri/tauri.conf.json` and `src-tauri/Cargo.toml`.
 - **Icon**: Replace `src-tauri/icons/app-icon.png`, then run `cargo tauri icon src-tauri/icons/app-icon.png` to regenerate all sizes automatically.
 
-## About the "Windows protected your PC" Warning
-
-Unsigned installers will trigger Windows SmartScreen showing "Unknown Publisher". Click **More info → Run anyway** to proceed. For production releases, you may:
-- Apply for a free open-source code signing certificate via [SignPath Foundation](https://signpath.org/).
-- Purchase a code signing certificate.
-
-Once the installer is signed and gains sufficient downloads, this prompt will disappear.
-
 ## FAQ
 
 - **Build error: cannot find `link.exe`**: C++ Build Tools are missing. Refer to Step 2 in "Prerequisites".
