@@ -1,7 +1,7 @@
 # AkiStash · Windows 桌面版
 
 <p align="center">
-  <a href="README.md"><b>English</b></a> | <a href="README_zh.md"><b>简体中文</b></a>
+  <a href="./readme_english.md"><b>English</b></a> | <a href="./readme.md"><b>简体中文</b></a>
 </p>
 
 AkiStash 是一款二维 / 三维绘图软件。名字来自 Aki（制作者cn嘿嘿嘿）和仓鼠在秋天囤粮的习性：一个囤积颜色、笔刷和灵感的小仓库。
