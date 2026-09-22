@@ -1,12 +1,16 @@
 # AkiStash · Windows 桌面版
 
+<p align="center">
+  <a href="README.md"><b>English</b></a> | <a href="README_zh.md"><b>简体中文</b></a>
+</p>
+
 AkiStash 是一款二维 / 三维绘图软件。名字来自 Aki（制作者cn嘿嘿嘿）和仓鼠在秋天囤粮的习性：一个囤积颜色、笔刷和灵感的小仓库。
 
 本目录是用 [Tauri 2](https://v2.tauri.app/) 打包的桌面版工程。完整的功能说明见 `功能说明.md`。
 
 ## 目录结构
 
-```
+```text
 AkiStash/
 ├─ src/                      网页前端（离线可用）
 │  ├─ index.html             软件本体
@@ -28,18 +32,16 @@ AkiStash/
 3. **WebView2**：Windows 10/11 一般已经自带，不用管。
 
 4. **Tauri 命令行工具**：
-   
-   ```
+   ```bash
    cargo install tauri-cli --version "^2" --locked
    ```
-   
    第一次编译需要几分钟。
 
 ## 开发运行
 
 在 `AkiStash` 目录下打开终端：
 
-```
+```bash
 cargo tauri dev
 ```
 
@@ -47,7 +49,7 @@ cargo tauri dev
 
 ## 打包安装程序
 
-```
+```bash
 cargo tauri build
 ```
 
@@ -74,7 +76,7 @@ cargo tauri build
 
 把整个目录推送到 GitHub 仓库后，打一个版本标签：
 
-```
+```bash
 git tag v1.0.0
 git push origin v1.0.0
 ```
@@ -95,12 +97,8 @@ GitHub Actions 会在云端的 Windows 机器上打包，并在仓库的 Release
 - **编译报错找不到 `link.exe`**：说明没装 C++ 生成工具，见“第一次准备环境”第 2 步。
 - **保存时报“没有权限”**：保存位置不在“用户文件夹 / 桌面 / 文档 / 下载 / 图片”之内。可以在 `src-tauri/capabilities/default.json` 的 `fs:scope` 里添加路径。
 
-
-
 ## 鸣谢
 
-· 特别感谢炸猫老师给我提供了很多板绘软件常用的功能，以及帮我找出了套索的bug，绘制软件logo o(*￣▽￣*)ブ
-
-· 感谢rs老师为我填补了软件提供工程制图方面的空白
-
-· 感谢炸猫的老鼠作为logo出境（啊？）
+- 特别感谢**炸猫老师**给我提供了很多板绘软件常用的功能，以及帮我找出了套索的bug，绘制软件logo o(*￣▽￣*)ブ
+- 感谢**rs老师**为我填补了软件提供工程制图方面的空白
+- 感谢炸猫的老鼠作为logo出境（啊？）
