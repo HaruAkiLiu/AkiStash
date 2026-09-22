@@ -72,15 +72,6 @@ cargo tauri build
 - **版本号**：同时改 `src-tauri/tauri.conf.json` 和 `src-tauri/Cargo.toml` 里的 `version`。
 - **图标**：替换 `src-tauri/icons/app-icon.png` 后运行 `cargo tauri icon src-tauri/icons/app-icon.png`，会自动生成所有尺寸。
 
-## 关于“Windows 已保护你的电脑”提示
-
-安装包没有数字签名时，Windows SmartScreen 会拦截并提示“未知发布者”，点“更多信息 → 仍要运行”即可安装。正式发布时可以考虑：
-
-- 申请 [SignPath Foundation](https://signpath.org/) 为开源项目提供的免费代码签名；
-- 或者购买代码签名证书。
-
-签名并积累一定下载量后，这个提示就会消失。
-
 ## 常见问题
 
 - **编译报错找不到 `link.exe`**：说明没装 C++ 生成工具，见“第一次准备环境”第 2 步。
