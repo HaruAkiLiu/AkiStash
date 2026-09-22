@@ -68,17 +68,6 @@ Send the `.exe` to others, and they can double-click to install it.
 - **Version**: Update `version` in both `src-tauri/tauri.conf.json` and `src-tauri/Cargo.toml`.
 - **Icon**: Replace `src-tauri/icons/app-icon.png`, then run `cargo tauri icon src-tauri/icons/app-icon.png` to regenerate all sizes automatically.
 
-## Automated Builds via GitHub Actions (Optional)
-
-Push the repository to GitHub and tag a release version:
-
-```bash
-git tag v1.0.0
-git push origin v1.0.0
-```
-
-GitHub Actions will automatically build on Windows runners and create a draft release in the repository with binaries attached. Free for public open-source repositories.
-
 ## About the "Windows protected your PC" Warning
 
 Unsigned installers will trigger Windows SmartScreen showing "Unknown Publisher". Click **More info → Run anyway** to proceed. For production releases, you may:
