@@ -1,7 +1,7 @@
 # AkiStash · Windows Desktop
 
 <p align="center">
-  <a href="README.md"><b>English</b></a> | <a href="README_zh.md"><b>简体中文</b></a>
+  <a href="./readme_english.md"><b>English</b></a> | <a href="./readme.md"><b>简体中文</b></a>
 </p>
 
 AkiStash is a 2D / 3D drawing application. The name comes from Aki (the creator's nickname) and the autumn hoarding habit of hamsters: a little stash for storing colors, brushes, and inspirations.
