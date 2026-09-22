@@ -72,17 +72,6 @@ cargo tauri build
 - **版本号**：同时改 `src-tauri/tauri.conf.json` 和 `src-tauri/Cargo.toml` 里的 `version`。
 - **图标**：替换 `src-tauri/icons/app-icon.png` 后运行 `cargo tauri icon src-tauri/icons/app-icon.png`，会自动生成所有尺寸。
 
-## 用 GitHub 自动打包（可选）
-
-把整个目录推送到 GitHub 仓库后，打一个版本标签：
-
-```bash
-git tag v1.0.0
-git push origin v1.0.0
-```
-
-GitHub Actions 会在云端的 Windows 机器上打包，并在仓库的 Releases 里生成一个草稿版本，附带安装包。确认无误后点“发布”即可。开源仓库使用 Actions 是免费的。
-
 ## 关于“Windows 已保护你的电脑”提示
 
 安装包没有数字签名时，Windows SmartScreen 会拦截并提示“未知发布者”，点“更多信息 → 仍要运行”即可安装。正式发布时可以考虑：
